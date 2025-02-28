@@ -4,6 +4,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 driver = webdriver.Chrome()
+driver.implicitly_wait(5)
 driver.get("https://around-v1.nm.tripleten-services.com/signin?lng=en")
 
 # Find the Email field and fill it in
